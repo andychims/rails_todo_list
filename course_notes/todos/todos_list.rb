@@ -33,7 +33,12 @@ class TodosList
     puts "high priority todos:"
     @todos.each do |todo|
       if todo.priority == :high
-        puts todo.content
+        if todo.complete == true
+          status = "complete"
+        else
+          status = "incomplete"
+        end
+        puts "#{todo.content} - #{status}"
       end
     end
   end
@@ -42,7 +47,12 @@ class TodosList
     puts "low priority todos:"
     @todos.each do |i|
       if i.priority == :low
-        puts i.content
+        if i.complete == true
+          status = "complete"
+        else
+          status = "incomplete"
+        end
+        puts "#{i.content} - #{status}"
       end
     end
   end

@@ -3,7 +3,7 @@ require './todos_list'
 
 todo1 = Todo.new("updated yall!", false, :high)
 todo2 = Todo.new("Read 'Hitchhiker's Guide to the Galaxy'", false, :high)
-todo3 = Todo.new("something number 3", true, :low)
+todo3 = Todo.new("something number 3", true)
 todos = [todo1, todo2, todo3]
 
 
